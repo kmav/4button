@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		3B3F4E8DF30E443BB0663CEC /* Pods_4_button.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40257A44DC8A7C0E88E518E1 /* Pods_4_button.framework */; };
 		5F73499B883A6A18148D509C /* Pods_4_buttonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDE6AED4AD2B9F56F62ECE /* Pods_4_buttonUITests.framework */; };
-		841D378B2253DAA30071473B /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D378A2253DAA30071473B /* Dog.swift */; };
+		841D378B2253DAA30071473B /* Dogy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D378A2253DAA30071473B /* Dogy.swift */; };
 		841D378E22553B090071473B /* ChildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D378D22553B090071473B /* ChildController.swift */; };
 		841D379022553D5F0071473B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 841D378F22553D5F0071473B /* Podfile */; };
 		841D379822553F810071473B /* __buttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D379722553F810071473B /* __buttonTests.swift */; };
+		841D37A0225566A80071473B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D379F225566A80071473B /* Models.swift */; };
 		8441EFD6224AEA4700380281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441EFD5224AEA4700380281 /* AppDelegate.swift */; };
 		8441EFD8224AEA4700380281 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441EFD7224AEA4700380281 /* ViewController.swift */; };
 		8441EFDB224AEA4700380281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441EFD9224AEA4700380281 /* Main.storyboard */; };
@@ -46,12 +47,13 @@
 		40257A44DC8A7C0E88E518E1 /* Pods_4_button.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_4_button.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4989419314C857FD200AECB7 /* Pods-4-button.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4-button.debug.xcconfig"; path = "Target Support Files/Pods-4-button/Pods-4-button.debug.xcconfig"; sourceTree = "<group>"; };
 		786962F8DA68987C9D799165 /* Pods-4-buttonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4-buttonTests.debug.xcconfig"; path = "Target Support Files/Pods-4-buttonTests/Pods-4-buttonTests.debug.xcconfig"; sourceTree = "<group>"; };
-		841D378A2253DAA30071473B /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		841D378A2253DAA30071473B /* Dogy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dogy.swift; sourceTree = "<group>"; };
 		841D378D22553B090071473B /* ChildController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildController.swift; sourceTree = "<group>"; };
 		841D378F22553D5F0071473B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		841D379522553F810071473B /* 4-buttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "4-buttonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841D379722553F810071473B /* __buttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __buttonTests.swift; sourceTree = "<group>"; };
 		841D379922553F810071473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841D379F225566A80071473B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		8441EFD2224AEA4700380281 /* 4-button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4-button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8441EFD5224AEA4700380281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8441EFD7224AEA4700380281 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,18 +107,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		841D37882253DA870071473B /* Group */ = {
-			isa = PBXGroup;
-			children = (
-				841D37892253DAA30071473B /* Model */,
-			);
-			path = Group;
-			sourceTree = "<group>";
-		};
 		841D37892253DAA30071473B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				841D378A2253DAA30071473B /* Dog.swift */,
+				841D378A2253DAA30071473B /* Dogy.swift */,
+				841D379F225566A80071473B /* Models.swift */,
 			);
 			name = Model;
 			path = "4-button/Model";
@@ -125,6 +120,7 @@
 		841D378C22553B090071473B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8441EFD7224AEA4700380281 /* ViewController.swift */,
 				841D378D22553B090071473B /* ChildController.swift */,
 			);
 			path = Controllers;
@@ -165,10 +161,9 @@
 		8441EFD4224AEA4700380281 /* 4-button */ = {
 			isa = PBXGroup;
 			children = (
+				841D37892253DAA30071473B /* Model */,
 				841D378C22553B090071473B /* Controllers */,
-				841D37882253DA870071473B /* Group */,
 				8441EFD5224AEA4700380281 /* AppDelegate.swift */,
-				8441EFD7224AEA4700380281 /* ViewController.swift */,
 				8441EFD9224AEA4700380281 /* Main.storyboard */,
 				8441EFDC224AEA4800380281 /* Assets.xcassets */,
 				8441EFDE224AEA4800380281 /* LaunchScreen.storyboard */,
@@ -513,7 +508,8 @@
 				841D378E22553B090071473B /* ChildController.swift in Sources */,
 				8441EFD8224AEA4700380281 /* ViewController.swift in Sources */,
 				8441EFD6224AEA4700380281 /* AppDelegate.swift in Sources */,
-				841D378B2253DAA30071473B /* Dog.swift in Sources */,
+				841D378B2253DAA30071473B /* Dogy.swift in Sources */,
+				841D37A0225566A80071473B /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,34 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Use them like regular Swift objects
+        let myDog = Dog()
+        myDog.name = "Rex"
+        myDog.age = 1
+        print("name of dog: \(myDog.name)")
+        
+        // Get the default Realm
+        let realm = try! Realm()
+        
+        // Query Realm for all dogs less than 2 years old
+        let puppies = realm.objects(Dog.self).filter("age < 2")
+        print("Number of dog puppies: \(puppies.count)")  // => 0 because no dogs have been added to the Realm yet
+        
+        // Persist your data easily
+        try! realm.write {
+            realm.add(myDog)
+        }
+        
         return true
     }
 
