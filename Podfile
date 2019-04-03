@@ -35,7 +35,7 @@ target '4-buttonTests' do
 end
 
 post_install do |installer|
-    swift42Targets = []
+  swift42Targets = ['RealmSwift', 'Realm']
 
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
