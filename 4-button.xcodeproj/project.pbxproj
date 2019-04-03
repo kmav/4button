@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841D378B2253DAA30071473B /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D378A2253DAA30071473B /* Dog.swift */; };
+		841D378E22553B090071473B /* ChildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D378D22553B090071473B /* ChildController.swift */; };
 		8441EFD6224AEA4700380281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441EFD5224AEA4700380281 /* AppDelegate.swift */; };
 		8441EFD8224AEA4700380281 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441EFD7224AEA4700380281 /* ViewController.swift */; };
 		8441EFDB224AEA4700380281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441EFD9224AEA4700380281 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841D378A2253DAA30071473B /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		841D378D22553B090071473B /* ChildController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildController.swift; sourceTree = "<group>"; };
 		8441EFD2224AEA4700380281 /* 4-button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4-button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8441EFD5224AEA4700380281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8441EFD7224AEA4700380281 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841D37882253DA870071473B /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				841D37892253DAA30071473B /* Model */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		841D37892253DAA30071473B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				841D378A2253DAA30071473B /* Dog.swift */,
+			);
+			name = Model;
+			path = "4-button/Model";
+			sourceTree = SOURCE_ROOT;
+		};
+		841D378C22553B090071473B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				841D378D22553B090071473B /* ChildController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8441EFC9224AEA4700380281 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +106,8 @@
 		8441EFD4224AEA4700380281 /* 4-button */ = {
 			isa = PBXGroup;
 			children = (
+				841D378C22553B090071473B /* Controllers */,
+				841D37882253DA870071473B /* Group */,
 				8441EFD5224AEA4700380281 /* AppDelegate.swift */,
 				8441EFD7224AEA4700380281 /* ViewController.swift */,
 				8441EFD9224AEA4700380281 /* Main.storyboard */,
@@ -197,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841D378E22553B090071473B /* ChildController.swift in Sources */,
 				8441EFD8224AEA4700380281 /* ViewController.swift in Sources */,
 				8441EFD6224AEA4700380281 /* AppDelegate.swift in Sources */,
+				841D378B2253DAA30071473B /* Dog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet var race: UILabel!
+class ChildController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let dog = Dog.init(1, "Lassy", 10)
-        dog.barc()
-        race.text = dog.race
-        self.navigationController?.title = "Dog"
     }
 
 
