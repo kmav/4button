@@ -14,6 +14,7 @@
 		841D379022553D5F0071473B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 841D378F22553D5F0071473B /* Podfile */; };
 		841D379822553F810071473B /* __buttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D379722553F810071473B /* __buttonTests.swift */; };
 		841D37A0225566A80071473B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D379F225566A80071473B /* Models.swift */; };
+		841D37A2225577B60071473B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D37A1225577B50071473B /* NetworkManager.swift */; };
 		8441EFD6224AEA4700380281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441EFD5224AEA4700380281 /* AppDelegate.swift */; };
 		8441EFD8224AEA4700380281 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441EFD7224AEA4700380281 /* ViewController.swift */; };
 		8441EFDB224AEA4700380281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441EFD9224AEA4700380281 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		841D379722553F810071473B /* __buttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __buttonTests.swift; sourceTree = "<group>"; };
 		841D379922553F810071473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841D379F225566A80071473B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		841D37A1225577B50071473B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8441EFD2224AEA4700380281 /* 4-button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4-button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8441EFD5224AEA4700380281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8441EFD7224AEA4700380281 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				841D378A2253DAA30071473B /* Dogy.swift */,
 				841D379F225566A80071473B /* Models.swift */,
+				841D37A1225577B50071473B /* NetworkManager.swift */,
 			);
 			name = Model;
 			path = "4-button/Model";
@@ -505,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841D37A2225577B60071473B /* NetworkManager.swift in Sources */,
 				841D378E22553B090071473B /* ChildController.swift in Sources */,
 				8441EFD8224AEA4700380281 /* ViewController.swift in Sources */,
 				8441EFD6224AEA4700380281 /* AppDelegate.swift in Sources */,
