@@ -1,6 +1,6 @@
 import Foundation
 
-class Dog {
+class Dogy {
 	
 	var color = 0
 	var race : String? = nil
