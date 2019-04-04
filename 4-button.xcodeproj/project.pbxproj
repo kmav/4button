@@ -271,13 +271,16 @@
 				TargetAttributes = {
 					841D379422553F810071473B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 8441EFD1224AEA4700380281;
 					};
 					8441EFD1224AEA4700380281 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					8441EFE5224AEA4800380281 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 8441EFD1224AEA4700380281;
 					};
 				};
@@ -576,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikatec.4button.--buttonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/4-button.app/4-button";
 			};
@@ -598,7 +601,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikatec.4button.--buttonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/4-button.app/4-button";
 			};
@@ -734,7 +737,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikatec.4button.--button";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -753,7 +756,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikatec.4button.--button";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -773,7 +776,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikatec.4button.--buttonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "4-button";
 			};
@@ -794,7 +797,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikatec.4button.--buttonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "4-button";
 			};

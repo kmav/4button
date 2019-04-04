@@ -35,8 +35,8 @@ target '4-buttonTests' do
 end
 
 post_install do |installer|
-  swift42Targets = ['RealmSwift', 'Realm', 'SwiftyJSON', 'ReachabilitySwift']
-  swift5Targets = []
+  swift42Targets = []
+  swift5Targets = ['RealmSwift', 'Realm', 'SwiftyJSON', 'ReachabilitySwift']
 
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
@@ -49,6 +49,12 @@ post_install do |installer|
             else
                 config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
             end
+        end
+
+        if swift5Targets.include? target.name
+          target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '5'
+          end
         end
 
         if swift42Targets.include? target.name
